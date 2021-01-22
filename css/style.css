@@ -1,0 +1,1284 @@
+/* ------------------------------------------------------------------------------
+
+  Template Name: Larry.
+  Description: Larry. - Personal Template
+  Author: Murren
+  Author URI: http://themeforest.net/user/murren20
+  Version: 1.0
+  
+  1.  Global
+
+      1.1 General
+      1.2 Loader
+      1.3 Typography
+      1.4 Fields
+      1.5 Buttons
+      1.6 Icons
+      1.7 Colors
+      1.8 Backgrounds
+      1.9 Content styles
+
+  2.  Header 
+
+      2.1 Brand
+      2.2 Navigation
+      2.3 Affix
+
+  3.  Home
+      3.1 Magnific popup
+  4.  About
+  5.  Services
+  6.  Portfolio
+  7.  Reviews
+
+      7.1 Owl Carousel
+
+  8.  Contacts
+  9.  Footer
+  10. Modals
+  11. Responsive styles
+      11.1 Min width 768px
+      11.2 Min width 992px
+      12.4 Min width 1200px
+
+    
+    
+/*-------------------------------------------------------------------------------
+  1. Global
+-------------------------------------------------------------------------------*/
+
+
+
+/* 1.1 General */
+
+
+
+@import url('bootstrap.min.css');
+@import url('font-awesome.min.css');
+@import url('ionicons.min.css');
+@import url('animate.css');
+@import url('magnific-popup.css');
+@import url('owl.carousel.css');
+@import url('owl.transitions.css');
+
+html{
+  font-size: 87%;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.62;
+  color:#767676;
+}
+
+::-webkit-scrollbar{
+  width: 18px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #e0013f;
+}
+
+::selection{
+  background-color:#313131;
+  color:#fff;
+}
+
+-webkit-::selection{
+    background-color:#313131;
+    color:#fff;
+}
+
+::-moz-selection{
+    background-color:#313131;
+    color:#fff;
+}
+
+
+
+/* 1.2 Loader */
+
+
+
+.loader{
+  position: fixed;
+  overflow: hidden;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background:#fff;
+  color:#fff;
+  text-align: center;
+}
+
+.spinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #313131;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% { -webkit-transform: scale(0.0) }
+  50% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
+/* 1.3 Typography */
+
+
+
+h1,
+.h1{ 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 4.5em;
+  line-height: 1.2;
+  margin:0 0 0.3em;
+}
+
+h2,
+.h2{ 
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  font-size: 2.1em;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #343434;
+  margin-bottom: 0.5em;
+}
+
+h3,
+.h3{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.15em;
+  line-height: 1.25;
+  font-weight: 700;
+  color:#343434;
+  margin-top: 1.6em;
+  margin-bottom: 0.8em;
+}
+
+h4,
+.h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height:1.4;
+  font-weight: 700;
+  color:#343434;
+  margin:0;
+}
+
+ul,
+ol {
+  margin-top:0px;
+  margin-bottom: 10px;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.inline-list li{
+
+  margin-right: 20px;
+}
+
+ol li,
+ul li{
+  margin-top: 10px;
+}
+
+p{ 
+  margin:0 0 1em 0;
+}
+
+a {
+  color:#313131;
+  -webkit-transition: color .3s ease-out;
+       -o-transition: color .3s ease-out;
+          transition: color .3s ease-out;
+}
+
+a:hover,
+a:focus {
+  color:#313131;
+  outline: none;
+}
+
+a:focus{
+  text-decoration: none;
+}
+
+
+
+/* 1.4 Fields */
+
+
+
+.form-control,
+textarea.form-control{
+  font-size: 1em;
+  color: #9F9F9F;
+  border-radius: 0;
+  padding: 1.4em 1.4em 1em;
+  border-width: 0  0 1px 0;
+  height: auto;
+  -webkit-box-shadow:none;
+          box-shadow:none;
+  -webkit-transition: all .15s;
+       -o-transition: all .15s;
+          transition: all .15s;
+}
+
+.form-control:focus {
+  border-color: #313131;
+  outline: 0;
+  -webkit-box-shadow:none;
+          box-shadow:none;
+}
+
+
+textarea.form-control{
+  padding-top: 1em;
+  height: 7em;
+  resize:none;
+}
+
+.form-control::-moz-placeholder {
+  color: #9F9F9F;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #9F9F9F;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #9F9F9F
+}
+
+.form-control.error{
+  border-color: #313131;
+}
+
+.input-group-btn{
+  font-size: inherit;
+}
+
+.wobble-error{
+  -webkit-animation: hvr-wobble-horizontal 1s ease-in-out 0s 1 normal;
+           animation: hvr-wobble-horizontal 1s ease-in-out 0s 1 normal;
+}
+
+
+label.error{
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  text-align: left;
+  font-size: 0.8em;
+  font-weight: 400;
+  margin:10px 20px 0;
+  color: #313131;
+}
+
+
+
+/* 1.5 Buttons */
+
+
+
+.btn{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  line-height: 1;
+  position: relative;
+  display: inline-block;
+  background:#313131;
+  border:2px solid #313131;
+  padding:1.4em 3.5em 1.4em;
+  border-radius: 0;
+  text-decoration: none;
+  color:#fff;
+  text-transform: uppercase;
+  -webkit-transition: background-color .3s ease-out;
+       -o-transition: background-color .3s ease-out;
+          transition: background-color .3s ease-out;
+}
+
+.btn .fa{
+  font-size: 1.3em;
+  margin-right: 5px;
+  color: #fff;
+}
+
+.btn:focus{
+  outline: none!important;
+  -webkit-box-shadow:none;
+  box-shadow: none;
+}
+
+.btn:hover,
+.btn:focus{
+  border-color:#313131;
+  background-color:transparent;
+  color: #313131;
+}
+
+.btn-b-primary{
+  border-color:#313131;
+  color: #313131;
+  background-color:transparent;
+}
+
+.btn-b-primary:hover{
+  background:#313131;
+  color: #fff;
+}
+
+.btn-b-white{
+  border-color:#fff;
+  background-color:transparent;
+}
+
+
+
+/* 1.6 Icons */
+
+
+
+.icon{
+  font-size: 3em;
+  line-height: 1;
+}
+
+
+
+/* 1.7 Colors */
+
+
+
+.text-white{
+  color:#fff;
+}
+
+.text-opacity{
+  opacity: 0.7;
+}
+
+.text-dark{
+  color:#343434;
+}
+
+.text-primary{
+  color:#313131;
+}
+
+
+
+/* 1.8 Backgrouns */
+
+
+
+.bgc-white{
+  background-color: #fff;
+}
+
+.bgc-light{
+  background-color: #000000;
+}
+
+.bgc-dark{
+  background-color: #282828;
+}
+
+.bgc-primary{
+  background-color:#313131;
+}
+
+
+
+/* 1.9 Content styles */
+
+
+
+.layout{
+  overflow: hidden;
+}
+
+.row-columns{
+  margin-top: -4em;
+}
+
+.column{
+  margin-top: 4em;
+}
+
+.row-padding{
+  margin-left: -2em;
+  margin-right: -2em;
+}
+
+.col-padding{
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.section{
+  padding: 7em 0;
+}
+
+.section-sm{
+  padding: 4em 0;
+}
+
+.section-body{
+  margin-top: 6.5em;
+}
+
+.section-body-sm{
+  margin-top: 1em;
+}
+
+.section-title{
+  margin-top: 0;
+  color:white;
+}
+.section-title-primary{
+  margin-top: 0;
+  color:#e0013f;
+}
+
+
+.section-buttons .btn{
+  margin:0 0.7em;
+}
+.designation-text{
+  background:#e0013f;
+  width:13rem;
+  padding:.4rem;
+  
+}
+.lead-text{
+  font-size: 1.25em;
+  line-height: 1.7em;
+  margin-top: 0;
+
+}
+
+.masked{
+  position: relative;
+}
+
+.masked:after{
+  content:'';
+  position: absolute;
+  left:0;
+  top:0;
+  width:100%;
+  height: 100%;
+ background-color: rgba(0,0,0,0.5);
+}
+
+.rel-1{
+  position: relative;
+  z-index: 1;
+}
+
+.mobile *{
+  background-attachment: scroll!important;
+}
+
+
+
+/*-------------------------------------------------------------------------------
+  2. Header
+-------------------------------------------------------------------------------*/
+
+
+
+.navbar{
+  position:absolute;
+  z-index: 10;
+  top:0;
+  left:0;
+  width: 100%;
+  padding:.5em 0;
+  margin:0;
+  border:0;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.navbar-header{
+  margin-left: 0!important;
+}
+
+.navbar-toggle{
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.navbar-toggle .icon-bar{
+  background-color: #000000;
+  height: 2px;
+  width: 30px; 
+}
+
+.navbar-toggle .icon-bar + .icon-bar{
+  margin-top: 5px;
+}
+
+.navbar-toggle.collapsed .icon-bar{
+  background-color: rgb(0, 0, 0);
+}
+
+.navbar .navbar-collapse{
+  border-top: 0;
+  box-shadow: none;
+}
+
+@media (max-height: 320px ){
+  .navbar .navbar-collapse{
+    max-height: 240px;
+  }
+}
+
+
+
+/* 2.1 Brand */
+
+
+
+.brand{
+  display: inline-block;
+  text-align: center;
+}
+
+.brand:hover,
+.brand:focus{
+  text-decoration: none;
+}
+
+
+
+/* 2.2 Navigation */
+
+
+
+.navbar-nav{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding-top: 0.7em;
+  margin:0;
+}
+
+.navbar-nav li{
+  position: relative;
+  margin-top: .8rem;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+
+}
+
+.navbar-nav li a{
+  text-decoration: none;
+  padding:12px 20px;
+  -webkit-transition:background-color 0.3s;
+  -o-transition:background-color 0.3s;
+  transition:background-color 0.3s;
+}
+
+.navbar-nav li a:hover,
+.navbar-nav li a:focus,
+.navbar-nav .active > a{
+  background-color: transparent;
+
+}
+
+.navbar-nav > li > a:hover,
+.navbar-nav > .active > a{
+  background-color: #e0013f;
+  color:white;
+}
+
+.navbar-nav li ul{
+  font-size: 14px;
+}
+
+.navbar-nav li li{
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.navbar-nav li li:last-child{
+  border-bottom: 0;
+}
+
+.navbar-nav li li a{
+  display: block;
+  padding: 15px 20px;
+  color: #e0013f;
+}
+
+.navbar-nav li li a .fa{
+  margin-right: 10px;
+}
+
+.navbar-nav li:hover{
+  z-index: 1;
+}
+
+.navbar-nav li:hover > ul{
+  opacity: 1;
+  -webkit-transform: rotateY(0);
+  -ms-transform: rotateY(0);
+  -o-transform: rotateY(0);
+  transform: rotateY(0);
+}
+
+
+
+/* 2.3 Affix */
+
+
+
+.navbar.affix{
+  position: fixed;
+}
+
+.navbar.affix .navbar-toggle{
+  margin-top: 0;
+}
+
+
+/*-------------------------------------------------------------------------------
+  3. Home
+-------------------------------------------------------------------------------*/
+
+
+
+.masthead{
+  background:#424242;
+  background-size: cover;
+}
+.main-img{
+  margin-top:-3rem;
+  transform:scale(1.3)
+}
+
+.main-name{
+  margin-top:7rem;
+}
+
+.opener{
+  display: table-cell;
+  vertical-align: middle;
+  color:#fff;
+  padding: 10em 0 7em;
+  width: 100000px;
+  height: 100vh;
+}
+
+.control{
+  margin-top:2.2em;
+}
+
+.masthead .btn:hover,
+.masthead .btn:focus{
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+}
+.section-buttons--hover:hover{
+  color:white;            
+}
+
+
+
+/* 3.4 Magnific popup */
+
+
+
+.mfp-figure{
+  box-shadow: none;
+}
+
+.mfp-iframe-scaler{
+  overflow: visible;
+}
+
+.mfp-wrap .mfp-content {
+  -webkit-perspective: 1300px;
+          perspective: 1300px
+  
+}
+
+.mfp-wrap .mfp-figure,
+.mfp-wrap .mfp-iframe-scaler {
+  opacity: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(60deg);
+  -o-transform: rotateX(60deg);
+  transform: rotateX(60deg);
+}
+
+.mfp-bg {
+  opacity: 0;
+  -webkit-transition: .5s;
+       -o-transition: .5s;
+          transition: .5s;
+}
+
+.mfp-wrap .mfp-figure,
+.mfp-wrap .mfp-iframe-scaler {
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+       -o-transition: .3s ease-in-out;
+          transition: .3s ease-in-out;
+  -webkit-transform: rotateX(-60deg);
+      -ms-transform: rotateX(-60deg);
+       -o-transform: rotateX(-60deg);
+          transform: rotateX(-60deg);
+}
+
+.mfp-bg {
+  opacity: 0;
+  -webkit-transition: .5s;
+       -o-transition: .5s;
+          transition: .5s;
+}
+
+.mfp-wrap.mfp-ready .mfp-figure,
+.mfp-wrap.mfp-ready .mfp-iframe-scaler {
+  opacity: 1;
+  -webkit-transform: rotateX(0);
+      -ms-transform: rotateX(0);
+       -o-transform: rotateX(0);
+          transform: rotateX(0);
+}
+
+.mfp-ready.mfp-bg {
+  opacity: 0.8;
+}
+
+.mfp-wrap.mfp-removing .mfp-figure ,
+.mfp-wrap.mfp-removing .mfp-iframe-scaler {
+  opacity: 0;
+  -webkit-transform: rotateX(-60deg);
+      -ms-transform: rotateX(-60deg);
+       -o-transform: rotateX(-60deg);
+          transform: rotateX(-60deg);
+  
+}
+
+.mfp-removing.mfp-bg {
+  opacity: 0;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/*  4. About
+/* ------------------------------------------------------------------------------- */
+
+
+
+.skills-bar{
+  margin-top: 4em;
+}
+
+.progress{
+  overflow: visible;
+  height: 0.5em;
+  margin-bottom: 2.7em;
+  border-radius: 0;
+}
+
+.progress-bar-title{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 0.7em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #141414;
+  margin-bottom: 0.5em;
+}
+
+.progress-bar{
+  font-family: 'Montserrat', sans-serif;
+  position: relative;
+  background-color: #e0013f;
+  color: #343434;
+} 
+
+.progress-bar span {
+  position: absolute;
+  top: -30px;
+  right: 0px;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/*  5. Services
+/* ------------------------------------------------------------------------------- */
+
+
+
+.services .column{
+  text-align: center;
+}
+
+.services .column h4{
+  margin:1em 0;
+}
+
+.carousel-section{
+  background:black;
+  color:white;
+}
+
+/* ------------------------------------------------------------------------------- */
+/*  6. Portfolio
+/* ------------------------------------------------------------------------------- */
+
+
+.isotope .isotope-item{
+  padding:15px;
+  width:100%;
+}
+
+.isotope-padding{
+  padding-bottom: 15px;
+}
+
+.isotope-padding .isotope-item{
+  padding:15px;
+}
+
+.isotope-space .isotope-item{
+  padding:4em 2em 0;
+}
+
+.showcase-item{
+  position: relative;
+  color: #fff;
+}
+
+.showcase-item-thumbnail img{
+  display: block;
+  width: 100%;
+}
+
+.showcase-item-hover{
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right:0;
+  opacity: 0;
+  color: #fff;
+  background-color:#313131;
+  -webkit-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.showcase-item-info{
+  position: absolute;
+  top:50%;
+  left: 20px;
+  opacity: 0;
+  width: 100%;
+  padding: 0 2em;
+  text-align:center;
+  -webkit-transform:translateY(-50%));
+  -ms-transform:translateY(-50%);
+  transform:translateY(-50%);
+  -webkit-transition: all  0.3s ease-in;
+  -ms-transition:  all  0.3s ease-in;
+  transition:  all  0.3s ease-in;
+}
+
+.showcase-item-category{
+  font-family:'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size:1.7em;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.showcase-item-title{
+  font-size: 1.2em;
+}
+
+.showcase-item:hover .showcase-item-hover {
+  opacity: 0.9;
+}
+
+.showcase-item:hover .showcase-item-info{
+  opacity: 1;
+  left:0;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/*  7. Reviews
+/* ------------------------------------------------------------------------------- */
+
+
+
+/* 7.1 Owl carousel */
+
+
+
+.owl-controls {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.owl-controls .owl-pagination{
+  text-align: center;
+}
+
+.owl-controls .owl-page{
+  display: inline-block;
+  margin:0 0.6em;
+}
+
+.owl-controls .owl-page span{
+  display: inline-block;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  background-color: #e5e5e5;
+  -webkit-transition: .2s linear;
+       -o-transition: .2s linear;
+          transition: .2s linear;
+}
+
+.owl-controls .owl-page.active span, 
+.owl-controls .owl-page:hover span{
+  background-color:#313131;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/*  8. Contacts
+/* ------------------------------------------------------------------------------- */
+
+
+
+.contact-line{
+  margin-bottom:3em;
+  font-size: 0.9em;
+}
+
+
+.contact-line .icon{
+  font-size: 2.5em;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/*  9. Footer
+/* ------------------------------------------------------------------------------- */
+
+
+
+.footer{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.85em;
+  padding:2em 0;
+}
+
+.footer .copy{
+  margin-top: 1em;
+}
+
+
+.social a{
+  font-size: 1.3em;
+  display: inline-block;
+  padding: 1px;
+  margin:0 15px;
+  color: #fff;
+}
+
+.social a:hover{
+  color: #e0013f;
+  text-decoration: none;
+}
+
+
+/* ------------------------------------------------------------------------------- */
+/*  10. Modals
+/* ------------------------------------------------------------------------------- */
+
+
+
+body:not(.modal-open){
+  padding-right:0!important;
+}
+
+.modal{
+  text-align: center;
+}
+
+.modal.fade .modal-dialog{
+  -webkit-perspective: 1300px;
+          perspective: 1300px;
+}
+
+.modal-content{
+  border-radius: 0;
+  border:0;
+  opacity: 0;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition:.5s ease-out;
+       -o-transition:.5s ease-out;
+          transition:.5s ease-out;
+}
+
+.modal.fade.in .modal-content{
+  opacity: 1;
+}
+
+.modal-dialog{
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 90%;
+  margin:25px auto;
+}
+
+.modal-content{
+  -webkit-box-shadow:none;
+  box-shadow: none;
+}
+
+.modal-header{
+  padding: 3em 1em;
+  border:0;
+  min-height: 0;
+  text-align: center;
+}
+
+.close{
+  display: inline-block;
+  font-weight: 100;
+  line-height: 1;
+  color:#9F9F9F;
+  text-align: center;
+  text-shadow: none; 
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 1;
+  filter: alpha(opacity=1);
+  -webkit-transition: all 0.2s linear;
+       -o-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+}
+
+.close:hover,
+.close:focus {
+  color: #313131;
+  opacity:1;
+  filter: alpha(opacity=1);
+}
+
+.modal-header .close{
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 20px;
+  font-size: 2em;
+}
+
+.modal-title{
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  font-size: 1.8em;
+}
+
+.modal-subtitle{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.modal-body{
+  padding: 0 3.8em 3em;
+}
+
+.modal-body .form-group{
+  margin-bottom: 30px;
+}
+
+.modal-message .modal-content{
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+
+
+/* ------------------------------------------------------------------------------- */
+/*  11. Responsive styles
+/* ------------------------------------------------------------------------------- */
+
+@media (max-width: 500px){
+  .main-img{
+    margin-top:2.5rem;
+  }
+}
+
+/* 11.1 Min width 768px */
+
+
+
+@media (min-width: 768px){
+
+
+  html{
+    font-size: 94%;
+  }
+
+
+
+  /* Portfolio */
+
+
+
+  .isotope .isotope-item{
+    width: 50%;
+  }
+
+
+  /* Modals */
+
+
+
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+
+  .modal-dialog {
+    width: 28em;
+  }
+}
+
+
+
+/* 11.2 Min width 992px */
+
+
+
+@media (min-width: 992px){
+
+  html{
+    font-size: 105%;
+  }
+
+  .text-right-md{
+    text-align:right;
+  }
+
+  .text-left-md{
+    text-align:left;
+  }
+
+
+
+  /* Navigation */
+
+
+
+  .navbar-nav > li{
+    border-bottom: 0;
+    margin-left: 3em;
+  }
+
+  .navbar-nav li a{
+    position: relative;
+    padding:0;
+    color:#e0013f;
+  }
+
+  .navbar-nav li a:hover,
+  .navbar-nav li a:focus,
+  .navbar-nav .active > a,
+  .navbar-nav .active > a:hover{
+    background-color: transparent;
+    color:#6c6c6c;
+  }
+
+  /* Footer */
+
+
+
+  .footer .copy{
+    margin-top: 0;
+  }
+
+}
+

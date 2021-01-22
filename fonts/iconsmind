@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'iconsmind';
+    src:    url('../fonts/iconsmind.eot?u5u3ph');
+    src:    url('../fonts/iconsmind.eot?u5u3ph#iefix') format('embedded-opentype'),
+        url('../fonts/iconsmind.ttf?u5u3ph') format('truetype'),
+        url('../fonts/iconsmind.woff?u5u3ph') format('woff'),
+        url('../fonts/iconsmind.svg?u5u3ph#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'iconsmind' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Alarm-Clock:before {
+    content: "\e617";
+}
+.icon-Align-Right:before {
+    content: "\e623";
+}
+.icon-Approved-Window:before {
+    content: "\e631";
+}
+.icon-Astronaut:before {
+    content: "\e671";
+}
+.icon-Atom:before {
+    content: "\e674";
+}
+.icon-Bag-Coins:before {
+    content: "\e682";
+}
+.icon-Bag:before {
+    content: "\e685";
+}
+.icon-Bar-Chart:before {
+    content: "\e68c";
+}
+.icon-Bodybuilding:before {
+    content: "\e6d0";
+}
+.icon-Box-Open:before {
+    content: "\e6e7";
+}
+.icon-Brain:before {
+    content: "\e6ee";
+}
+.icon-Cardigan:before {
+    content: "\e72b";
+}
+.icon-Check-2:before {
+    content: "\e73d";
+}
+.icon-Code-Window:before {
+    content: "\e792";
+}
+.icon-Compass-4:before {
+    content: "\e7a9";
+}
+.icon-Computer:before {
+    content: "\e7af";
+}
+.icon-Contrast:before {
+    content: "\e7b4";
+}
+.icon-CPU:before {
+    content: "\e7bf";
+}
+.icon-Duplicate-Layer:before {
+    content: "\e840";
+}
+.icon-Email:before {
+    content: "\e854";
+}
+.icon-File-Edit:before {
+    content: "\e899";
+}
+.icon-File-HorizontalText:before {
+    content: "\e8a0";
+}
+.icon-Finger-Print:before {
+    content: "\e8c4";
+}
+.icon-Fingerprint-2:before {
+    content: "\e8c6";
+}
+.icon-Fingerprint:before {
+    content: "\e8c7";
+}
+.icon-Fluorescent:before {
+    content: "\e8e8";
+}
+.icon-Font-Window:before {
+    content: "\e915";
+}
+.icon-Fountain-Pen:before {
+    content: "\e923";
+}
+.icon-Laptop-Phone:before {
+    content: "\ea14";
+}
+.icon-Loop:before {
+    content: "\ea60";
+}
+.icon-Love-Window:before {
+    content: "\ea65";
+}
+.icon-Magnifi-Glass2:before {
+    content: "\ea6f";
+}
+.icon-Mail-2:before {
+    content: "\ea70";
+}
+.icon-Male-2:before {
+    content: "\ea90";
+}
+.icon-MaleFemale:before {
+    content: "\ea93";
+}
+.icon-Map-Marker2:before {
+    content: "\ea99";
+}
+.icon-Marker:before {
+    content: "\ea9f";
+}
+.icon-Medal:before {
+    content: "\eaa7";
+}
+.icon-Mustache-2:before {
+    content: "\eae9";
+}
+.icon-Mustache-3:before {
+    content: "\eaea";
+}
+.icon-Mustache-4:before {
+    content: "\eaeb";
+}
+.icon-Navigation-LeftWindow:before {
+    content: "\eaf5";
+}
+.icon-Notepad:before {
+    content: "\eb0d";
+}
+.icon-Orientation-2:before {
+    content: "\eb28";
+}
+.icon-Password-2shopping:before {
+    content: "\eb3f";
+}
+.icon-Pencil-Ruler:before {
+    content: "\eb4e";
+}
+.icon-People-onCloud:before {
+    content: "\eb52";
+}
+.icon-Phone-2:before {
+    content: "\eb58";
+}
+.icon-Photo-2:before {
+    content: "\eb60";
+}
+.icon-Photos:before {
+    content: "\eb66";
+}
+.icon-Pizza-Slice:before {
+    content: "\eb7a";
+}
+.icon-RGB:before {
+    content: "\ebf4";
+}
+.icon-Rock-andRoll:before {
+    content: "\ec02";
+}
+.icon-Rocket:before {
+    content: "\ec03";
+}
+.icon-Ruler-2:before {
+    content: "\ec0f";
+}
+.icon-Security-Check:before {
+    content: "\ec3b";
+}
+.icon-Ship:before {
+    content: "\ec51";
+}
+.icon-Shop-2:before {
+    content: "\ec56";
+}
+.icon-Sidebar-Window:before {
+    content: "\ec65";
+}
+.icon-Speach-BubbleDialog:before {
+    content: "\eca9";
+}
+.icon-Split-Horizontal2Window:before {
+    content: "\ecb6";
+}
+.icon-Support:before {
+    content: "\ecfc";
+}
+.icon-Thumbs-UpSmiley:before {
+    content: "\ed42";
+}
+.icon-Tree-2:before {
+    content: "\ed70";
+}
+.icon-Trophy:before {
+    content: "\ed7f";
+}
+.icon-URL-Window:before {
+    content: "\edb7";
+}
+.icon-Video-5:before {
+    content: "\edca";
+}
+.icon-Windows-2:before {
+    content: "\edfb";
+}
+
