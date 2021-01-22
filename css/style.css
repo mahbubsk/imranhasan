@@ -498,7 +498,8 @@ label.error{
   margin:0 0.7em;
 }
 .designation-text{
-  background:#e0013f;
+  border-top:1px solid #e0013f;
+  border-bottom:1px solid #e0013f;
   width:13rem;
   padding:.4rem;
   
