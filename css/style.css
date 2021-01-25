@@ -76,12 +76,13 @@ body{
 
 ::-webkit-scrollbar{
   width: 18px;
-  height: 8px;
+
 }
 
 ::-webkit-scrollbar-thumb {
   cursor: pointer;
   background: #e0013f;
+  height:5px;
 }
 
 ::selection{
@@ -710,12 +711,15 @@ label.error{
   background-size: cover;
 }
 .main-img{
-  margin-top:-3rem;
-  transform:scale(1.3)
+
+  transform:scale(1.3);
+
 }
 
 .main-name{
   margin-top:7rem;
+ 
+
 }
 
 .opener{
@@ -1055,11 +1059,12 @@ label.error{
 
 
 .social a{
-  font-size: 1.3em;
+  font-size: 2rem;
   display: inline-block;
   padding: 1px;
   margin:0 15px;
-  color: #fff;
+  color:white;
+
 }
 
 .social a:hover{
